@@ -3,4 +3,5 @@ from fastapi import fastapi
 app = FastAPI()
 
 app.get("/")
-async def 
+async def root():
+    return {"message":"Hello"}
